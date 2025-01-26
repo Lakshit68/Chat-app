@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "express": "^4.21.0",
     "http": "^0.0.1-security",
+    "mongoose": "^8.9.5",
     "socket.io": "^4.8.0"
   }
 }
