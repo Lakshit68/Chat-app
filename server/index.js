@@ -3,11 +3,7 @@ const http = require('http')
 const Server = require('socket.io').Server
 const Connection = require('./db.js')
 const mongoose = require("mongoose")
-<<<<<<< HEAD
 const Chat = require('./models/Chat.js')
-=======
-const Chat = require('./Chat.js')
->>>>>>> c372f4b5802252bf8c0e83b9e9f9893c47327896
 const { timeStamp } = require('console')
 
 const app = express()
@@ -48,10 +44,6 @@ io.on("connection", (socket) => {
     })
 })
 
-server.listen("3001", () => {
-    console.log("running on 3001 port")
-<<<<<<< HEAD
+server.listen("3002", () => {
+    console.log("running on 3002 port")
 })
-=======
-})
->>>>>>> c372f4b5802252bf8c0e83b9e9f9893c47327896
