@@ -1,8 +1,10 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
+
 function Connection() {
-    const mongoURI = "mongodb://127.0.0.1:27017/chat"
+    const mongoURI = process.env.DB
     mongoose.connect(mongoURI)
-    .then(() => console.log("connected"))
+    .then(() => console.log("mongoDB connected"))
     .catch(err => console.log(err))
 }
 
